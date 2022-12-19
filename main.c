@@ -2,52 +2,10 @@
 //  Have the program do the guessing to discover the secret wordle word.
 //  UIC CS 211 Program 4
 //  Author: Faaizuddin Farooqui
-//  System: Replit
 //
 //  Links to wordle dictionary words at:
 //    https://www.reddit.com/r/wordle/comments/s4tcw8/a_note_on_wordles_word_list/
-/*  Running the program looks like:
-        Using file wordsLarge.txt with 12947 words.
-        -----------------------------------------------------------
 
-        Enter a secret word or just r to choose one at random: dream
-        Trying to find secret word:
-               d r e a m
-
-            1. s o r e s
-                   * *
-            2. s e r e r
-                 * *
-            3. r a r e r
-               * *   *
-            4. r a r e e
-               * *   *
-            5. s a r e e
-                 * * *
-            6. p a r e r
-                 * * *
-            7. c a r e r
-                 * * *
-            8. b a r e r
-                 * * *
-            9. f a r e r
-                 * * *
-           10. D a r e r
-                 * * *
-           11. D e a r e
-                 * * *
-           12. D e b A r
-                 *     *
-           13. D R E A r
-                       *
-           14. D R E A d
-
-           15. D R E A M
-
-        Got it!
-
-     ... and then it runs two more times ...
- */
 #include <assert.h> // for assert() sanity checks
 #include <ctype.h>  // for toupper()
 #include <stdbool.h>
